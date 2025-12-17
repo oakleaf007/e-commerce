@@ -7,7 +7,7 @@
 }
 
 header{
-    z-index: 1000;
+    z-index: 100;
     background-color: #F1E9DC;
     position: fixed;
     padding: 0;
@@ -22,7 +22,7 @@ content cause we wanted both fixed header
  and some relative-absolute content like 
  nav menu for mobile screens */
 #header-cont{
-    z-index: 100;
+    z-index: 1000;
     background-color: #F1E9DC;
     width: 100%;
     /* background-color: aqua; */
@@ -105,7 +105,7 @@ background: none;
 
 
 /* this is the whole nav menu */
-#nav-menu{
+#nav-menu{z-index: 10;
     display: flex;
    place-content: center;
    place-items: center;
