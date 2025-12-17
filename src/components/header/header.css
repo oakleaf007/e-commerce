@@ -7,7 +7,7 @@
 }
 
 header{
-    
+    z-index: 1000;
     background-color: #F1E9DC;
     position: fixed;
     padding: 0;
@@ -22,13 +22,16 @@ content cause we wanted both fixed header
  and some relative-absolute content like 
  nav menu for mobile screens */
 #header-cont{
+    z-index: 100;
     background-color: #F1E9DC;
     width: 100%;
     /* background-color: aqua; */
     position: relative;
 }
 
-
+#logo-container{
+    cursor: pointer;
+}
 
 .logo-name{
     color: #3E4F1E;

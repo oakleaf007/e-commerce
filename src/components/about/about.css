@@ -1,0 +1,37 @@
+#about-container{
+    background-color: #2F3D14;
+    display: flex;
+   justify-content: center;
+    padding: 10px;
+    margin-top:30px;
+    color: #F5F7F2;
+    border-bottom: 2px solid #3E4F1E;
+}
+.about-us{
+    padding: 10px;
+}
+.about-us ul{
+    list-style: none;
+    padding: 0;
+}
+
+.help{
+    padding: 10px;
+}
+.help ul{
+    padding: 0;
+    list-style: none;
+}
+#devider{
+    margin: 8px;
+    height: 100px;
+    width: 2px;
+    background-color: #a6a6a6;
+}
+.help ul li a{
+    text-decoration: none;
+    color: #C9D6A3;
+}
+#address{
+    padding: 10px;
+}

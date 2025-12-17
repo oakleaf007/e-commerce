@@ -16,8 +16,8 @@ export default function Header(){
     {/* the header container looks unnecessary but needed for header fix + later same menu into mobile version */}
     <div id="header-cont" className="container-fluid d-flex justify-content-between align-items-center p-3">
             {/*here logo div  */}
-        <div>
-          <span className="logo-name" >Ethnora</span>
+        <div id="logo-container">
+          <span className="logo-name" >Aalaya</span>
         </div>
 
         {/* this is the navbar  menu */}
