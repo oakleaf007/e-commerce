@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    
+    background-color: #F1E9DC;
+    position: fixed;
+    padding: 0;
+    /* border: 2px solid #333; */
+
+}
+
+
+
+/* this is a another wrapper for header 
+content cause we wanted both fixed header
+ and some relative-absolute content like 
+ nav menu for mobile screens */
+#header-cont{
+    background-color: #F1E9DC;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+
+
+.logo-name{
+    color: #3E4F1E;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* this is nav anchors */
+.nav-link{
+    transition: none;
+    border: none;
+}
+
+
+/* this is for ul li */
+.nav-li{
+    /* background-color: #FAF7F2; */
+transition:  all 0.3s ease;
+ /* border-radius:4px ; */
+
+
+}
+
+/* this is seperator bar shows in big screen only */
+#seperator{
+    height: 40px;
+    width: 2px;
+    background-color: #cac9ca;
+}
+.nav-li:hover{
+     color: #6B8E23;
+    /* background-color: #3E4F1E; */
+
+   
+}
+
+/* this is the hamburger button */
+#hamburger{
+    /* display: flex; */
+    flex-direction: column;
+    gap: 6px;
+    display: none;
+}
+
+
+/* this is the search container
+it is responsible for having the both input
+and button together */
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #cac9c9;
+    border-radius: 2rem;
+    overflow: hidden; 
+}
+
+
+#search-input{
+     border: none;
+    border-radius: 0;
+}
+#search-btn{
+
+background: none;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+/* this is the whole nav menu */
+#nav-menu{
+    display: flex;
+   place-content: center;
+   place-items: center;
+    /* background-color: #6B8E23; */
+}
+
+
+/* hamburger button which is changed to class */
+
+.hamburger{
+    cursor: pointer ;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    background-color: #3E4F1E;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    
+    flex-direction: column;
+    gap: 6px;
+    display: none;
+}
+.hamburger:hover{
+    background-color: #6B8E23;
+}
+.hamburger span{
+
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+/* ul is considering as the menu container */
+  #ul-menu{
+    margin: 0 auto;
+    padding-left: 0;
+    /* background-color: #3E4F1E; */
+    list-style: none;
+    display:flex;
+        flex-direction: row;
+        gap: 15px;
+       
+        
+       
+    }
+     #ul-menu li input{
+   
+    padding: 10px;
+   }
+
+
+   /* for smaller screen */
+  
+@media (max-width:640px) {
+   .hamburger{
+        display: flex;
+        cursor: pointer ;
+    }
+    #ul-menu{
+        /* background-color: #3E4F1E; */
+        width: 100%;
+        flex-direction: column;
+        gap:0;
+        
+    }
+ 
+    #seperator{
+        display: none;
+    }
+    #nav-menu{
+        
+        
+        /* display: none; */
+        top: 100%;
+        right: 0%;
+        width: 100%;
+        z-index: -1;
+       background-color: #6B8E23;
+        flex-direction: column;
+        position: absolute;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ;
+        border-radius: 0px 0px 4px 4px;
+       
+    }
+   
+    #nav-menu.open{
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .nav-li{
+       
+        /* background-color: #3E4F1E; */
+        display: block;
+        padding-left: 0;
+         border-radius:0 ;
+         padding: 5px;
+         /* background-color: #3E4F1E; */
+         color: #F1E9DC;
+    }
+     .nav-li:hover{
+            background-color: #F1E9DC;
+            color: #6B8E23;
+     }
+    .search-wrapper{
+          margin: 10px;
+    }
+   #ul-menu li input{
+    
+    padding: 10px;
+   }
+}
+
+/* end of media/screen size attribute */
