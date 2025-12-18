@@ -5,7 +5,7 @@ export default function About(){
 return(
     <div>
         <div id="about-container">
-            <div class="about-us">
+            <div className="about-us">
                 <span style={{color: " #F1E9DC" ,fontWeight: 'bold'}}>CONTACT US</span>
                 <br></br>
                 <span>Ph:</span>
@@ -13,7 +13,7 @@ return(
                 <span>Email:</span>
             </div>
             <div id="devider"></div>
-            <div class="help">
+            <div className="help">
                 <span style={{color: " #F1E9DC",fontWeight: 'bold'} }>HELP?</span>
                 <ul>
                     <li><a href="">Payments</a></li>

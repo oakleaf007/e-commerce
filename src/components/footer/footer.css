@@ -1,14 +1,16 @@
 footer{
+
     width: 100%;
     text-align: center;
     padding: 20px 0px 20px 0px;
     font-size: 1rem;
     background-color: #2F3D14;
-    color: #F5F7F2;
+   
     font-weight: bold;
 }
 #footer{
-    
+    color: #cfc8b8;
+    font-size: 14px;
     /* border: 1px solid #333; */
     place-content: center;
     place-items: center;
