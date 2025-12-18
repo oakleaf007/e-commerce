@@ -2,6 +2,9 @@ import "./home.css";
 
 import About from "../components/about/About";
 import RatingStars from "../components/product/Rating";
+import Category from "../components/product/Category";
+
+
 
 export default function Home(){
 return(
@@ -9,13 +12,21 @@ return(
 
  
     <div id="intro">
-        <p id="welcome-para">Welcome to a world of timeless tradition and elegant ethnic fashion.</p>
+        <p id="welcome-para">Welcome to the Penguin wear.</p>
         <button id="shop-btn">Get started &rarr;</button>
         
     </div>
 
     <div id="label">
-        All Kollections
+        Shop by categories
+
+    </div>
+  <div style={{width: "100%"}}>
+    <Category />
+</div>
+
+    <div id="label">
+        Top Deals
 
     </div>
     <div className="product-cont">
@@ -110,7 +121,10 @@ return(
     </div>
 
     <About />
+
+     
        </div>
+       
         
 )
 }

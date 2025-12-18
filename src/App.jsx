@@ -7,6 +7,8 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./entry/Home";
 
+import BottomHeader from './components/header/Header2';
+
 export default function App() {
 
 return(<>
@@ -15,6 +17,7 @@ return(<>
         <Home />
       </main>
     <Footer />
+     <BottomHeader />
 </>)
  
 }
