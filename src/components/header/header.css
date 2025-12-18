@@ -34,6 +34,7 @@ content cause we wanted both fixed header
 }
 
 .logo-name{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     color: #3E4F1E;
     font-weight: bold;
     font-size: 20px;

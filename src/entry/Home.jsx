@@ -1,6 +1,8 @@
 import "./home.css";
 
 import About from "../components/about/About";
+import RatingStars from "../components/product/Rating";
+
 export default function Home(){
 return(
     <div id="home-parent">
@@ -22,6 +24,12 @@ return(
             <div className="desc">
                 <span className="prod-name">Chinese lehenga</span>
                 <span className="prod-price">&#x20B9; 6900</span>
+                <RatingStars />
+                      <div id="shop-btns">
+                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
+                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
+
+                      </div>
                 </div>    
         </div>
         <div className="prod-card">
@@ -29,6 +37,12 @@ return(
             <div className="desc">
                 <span className="prod-name">Chinese lehenga</span>
                 <span className="prod-price">&#x20B9; 6900</span>
+                <RatingStars />
+                      <div id="shop-btns">
+                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
+                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
+
+                      </div>
                 </div>    
         </div>
         <div className="prod-card">
@@ -36,6 +50,12 @@ return(
             <div className="desc">
                 <span className="prod-name">Chinese lehenga</span>
                 <span className="prod-price">&#x20B9; 6900</span>
+                <RatingStars />
+                      <div id="shop-btns">
+                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
+                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
+
+                      </div>
                 </div>    
         </div>
         <div className="prod-card">
@@ -43,6 +63,12 @@ return(
             <div className="desc">
                 <span className="prod-name">Chinese lehenga</span>
                 <span className="prod-price">&#x20B9; 6900</span>
+                <RatingStars />
+                      <div id="shop-btns">
+                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
+                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
+
+                      </div>
                 </div>    
         </div>
         <div className="prod-card">
@@ -50,6 +76,12 @@ return(
             <div className="desc">
                 <span className="prod-name">Chinese lehenga</span>
                 <span className="prod-price">&#x20B9; 6900</span>
+                <RatingStars />
+                      <div id="shop-btns">
+                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
+                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
+
+                      </div>
                 </div>    
         </div>
         <div className="prod-card">
@@ -57,8 +89,24 @@ return(
             <div className="desc">
                 <span className="prod-name">Chinese lehenga</span>
                 <span className="prod-price">&#x20B9; 6900</span>
+
+                      <RatingStars />
+                      <div id="shop-btns">
+                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
+                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
+
+                      </div>
                 </div>    
+
+              
         </div>
+
+
+
+   
+
+
+
     </div>
 
     <About />
