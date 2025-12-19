@@ -17,6 +17,8 @@ h2{
     font-size: 20px;
 }
 #form-container{
+    margin: 0 auto;
+    width: 92%;
     box-shadow:
     0 10px 15px rgba(47, 61, 22, 0.18),
     0 4px 10px rgba(0, 0, 0, 0.05);
