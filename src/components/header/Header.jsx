@@ -1,7 +1,7 @@
 import "./header.css";
 
 import { useState } from "react";
-
+import {Link} from "react-router-dom";
 
 export default function Header(){
 
@@ -39,7 +39,7 @@ export default function Header(){
             </li>
 
             {/* these are the navbar elements with anchor tag */}
-            <li className="nav-item  nav-li"><a className="nav-link p-2" href="">signin</a></li>
+            <li className="nav-item  nav-li"><Link to="/signin" className="nav-link p-2" >signin</Link></li>
             <li className="nav-item   nav-li"><a className="nav-link p-2" href="">signup</a></li> <div id="seperator"></div>
             <li className="nav-item   nav-li d-flex gap-0 px-1"><a className="nav-link p-2 d-flex gap-1" href=""><img src="/profile.svg" width="21px"></img><span>profile</span></a></li>
             

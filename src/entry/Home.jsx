@@ -1,6 +1,5 @@
 import "./home.css";
 
-import About from "../components/about/About";
 import RatingStars from "../components/product/Rating";
 import Category from "../components/product/Category";
 
@@ -108,21 +107,11 @@ return(
 
                       </div>
                 </div>    
-
-              
+     
         </div>
-
-
-
-   
-
-
 
     </div>
 
-    <About />
-
-     
        </div>
        
         
