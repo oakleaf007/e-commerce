@@ -16,7 +16,7 @@ footer{
     place-content: center;
     place-items: center;
     
-    /* padding-bottom: 60px; */
+    padding-bottom: 60px;
 }
 #footer p{
     margin: 0;

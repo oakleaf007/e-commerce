@@ -1,7 +1,7 @@
 #bottom-header{
     background-color: #F1E9DC;
 
-     position: sticky;
+     position: fixed;
   bottom: 0;
   width: 100%;
  z-index: 999;
