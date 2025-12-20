@@ -9,6 +9,7 @@ import Home from "./entry/Home";
 import About from './components/about/About';
 import BottomHeader from './components/header/Header2';
 
+import ScrollTop from './entry/ScrollTop';
 import Signin from './entry/Signin';
 const preview = false;
 
@@ -24,17 +25,18 @@ if(preview){
 }
 
 return(<>
-    <Header />
+    <ScrollTop />
+    <Header />  
     <main >
       <Routes>
         <Route path="/" element={ <Home />}/>
         <Route path="/signin" element={<Signin />}/>
       </Routes>
-      
-         
-      </main>
       <About />
     <Footer />
+         
+      </main>
+      
      <BottomHeader />
 </>)
  

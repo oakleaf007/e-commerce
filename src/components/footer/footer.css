@@ -5,9 +5,9 @@ footer{
     padding: 20px 0px 20px 0px;
     font-size: 1rem;
     background-color: #2F3D14;
-   
+    
     font-weight: bold;
-    padding-bottom:80px ;
+    
 }
 #footer{
     color: #cfc8b8;
@@ -16,8 +16,8 @@ footer{
     place-content: center;
     place-items: center;
     
-    
-
+    /* margin-bottom: 80px; */
+   
 }
 #footer p{
     margin: 0;

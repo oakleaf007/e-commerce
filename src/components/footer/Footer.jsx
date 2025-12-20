@@ -8,6 +8,7 @@ export default function Footer(){
                 <p>&copy; OAK LEAF & Aalaya. All right reserved.</p>
                 <p><span className="current-year">2026</span></p>
             </div>
+          
         </footer>
 
     )
