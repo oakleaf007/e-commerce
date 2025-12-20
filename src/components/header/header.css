@@ -9,7 +9,7 @@
 header{
     z-index: 100;
     background-color: #F1E9DC;
-    position: fixed;
+    position: sticky;
     padding: 0;
     /* border: 2px solid #333; */
 

@@ -78,18 +78,18 @@ body{
 }
 body,
 #root{
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* margin-bottom:28px; */
   /* background-color: #FAF7F2; */
 }
 main{
-  /* overflow-y: auto; */
+  overflow-y: auto;
   /* background-color: #FAF7F2; */
     flex: 1;
- margin-top: 60px;
+
 
 
    place-content: center;
