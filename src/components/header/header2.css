@@ -3,6 +3,7 @@
 
      position: fixed;
   bottom: 0;
+  height: 65px;
   width: 100%;
  z-index: 999;
 place-content: center;
@@ -13,7 +14,7 @@ place-content: center;
 #bottom-bar{
   /* position: fixed; */
      /* border: 2px solid #333; */
-   
+   height: 100%;
     margin: 0 auto;
     display: flex;
   
