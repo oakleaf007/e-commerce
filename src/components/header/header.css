@@ -9,9 +9,10 @@
 header{
     z-index: 100;
     background-color: #F1E9DC;
-    position: sticky;
+    position: fixed;
     top: 0;
     padding: 0;
+    height: 65px;
     /* border: 2px solid #333; */
 
 }
@@ -23,6 +24,7 @@ content cause we wanted both fixed header
  and some relative-absolute content like 
  nav menu for mobile screens */
 #header-cont{
+    height: 100%;
     z-index: 1000;
     background-color: #F1E9DC;
     width: 100%;
