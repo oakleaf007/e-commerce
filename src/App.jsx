@@ -31,11 +31,14 @@ return(<>
       <Routes>
         <Route path="/" element={ <Home />}/>
         <Route path="/signin" element={<Signin />}/>
+        
       </Routes>
-      <About />
+        <About />
     <Footer />
+     
             
       </main>
+     
       <BottomHeader />
   
 </>)
