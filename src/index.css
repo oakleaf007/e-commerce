@@ -88,11 +88,13 @@ body,
 main{
   overflow-y: auto;
   /* background-color: #FAF7F2; */
+    flex: 1;
  margin-top: 60px;
-  flex: 1;
+
+
    place-content: center;
 
- 
+
 }
 main::-webkit-scrollbar{
   width: 8px;;
