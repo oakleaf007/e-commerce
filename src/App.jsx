@@ -34,10 +34,10 @@ return(<>
       </Routes>
       <About />
     <Footer />
-         
+            
       </main>
-      
-     <BottomHeader />
+      <BottomHeader />
+  
 </>)
  
 }
