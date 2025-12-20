@@ -94,7 +94,7 @@ main{
 
    place-content: center;
 
-
+  padding-bottom: 60px;
 }
 main::-webkit-scrollbar{
   width: 8px;;
