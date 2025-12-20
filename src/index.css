@@ -87,6 +87,7 @@ body,
   /* background-color: #FAF7F2; */
 }
 main{
+   scrollbar-width: none;
   overflow-y: auto;
   /* background-color: #FAF7F2; */
     flex: 1;
@@ -99,7 +100,7 @@ min-width: 0;
   padding-bottom: 60px;
 }
 main::-webkit-scrollbar{
-  width: 8px;;
+  width: 0;
 }
 main::-webkit-scrollbar-track {
   background: transparent;
