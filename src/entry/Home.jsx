@@ -3,7 +3,7 @@ import "./home.css";
 import RatingStars from "../components/product/Rating";
 import Category from "../components/product/Category";
 
-
+import ProductList from "../components/product/ProductList";
 
 export default function Home(){
 return(
@@ -22,6 +22,12 @@ return(
     </div>
   <div style={{width: "100%"}}>
     <Category />
+
+     <div id="label">
+        Don't miss
+
+    </div>
+  <ProductList />
 </div>
 
     <div id="label">
