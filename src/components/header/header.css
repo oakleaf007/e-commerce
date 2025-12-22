@@ -37,6 +37,7 @@ content cause we wanted both fixed header
 }
 
 .logo-name{
+    text-decoration: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     color: #3E4F1E;
     font-weight: bold;
@@ -59,7 +60,9 @@ transition:  all 0.3s ease;
 
 
 }
-
+.nav-item span{
+    cursor: pointer;
+}
 /* this is seperator bar shows in big screen only */
 #seperator{
     height: 40px;

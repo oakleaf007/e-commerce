@@ -23,7 +23,7 @@ useEffect(()=>{
     <div id="header-cont" className="container-fluid d-flex justify-content-between align-items-center p-3">
             {/*here logo div  */}
         <div id="logo-container">
-          <span className="logo-name" >Aalaya</span>
+          <span className="logo-name" ><Link to="/" style={{textDecoration:"none", color:"#3E4F1E"}}>Aalaya</Link></span>
         </div>
 
         {/* this is the navbar  menu */}
@@ -46,8 +46,8 @@ useEffect(()=>{
 
             {/* these are the navbar elements with anchor tag */}
             <li className="nav-item  nav-li"><Link to="/signin" className="nav-link p-2" >signin</Link></li>
-            <li className="nav-item   nav-li"><a className="nav-link p-2" href="">signup</a></li> <div id="seperator"></div>
-            <li className="nav-item   nav-li d-flex gap-0 px-1"><a className="nav-link p-2 d-flex gap-1" href=""><img src="/profile.svg" width="21px"></img><span>profile</span></a></li>
+            <li className="nav-item   nav-li"><Link to ="/signup"  className="nav-link p-2 ">signup</Link></li> <div id="seperator"></div>
+            <li className="nav-item   nav-li d-flex gap-0 px-1"><span className="nav-link p-2 d-flex gap-1 span-nav" href=""><img src="/profile.svg" width="24px"></img></span></li>
             
           </ul>
         </div>

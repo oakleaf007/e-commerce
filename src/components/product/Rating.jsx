@@ -11,7 +11,7 @@ export default function RatingStars() {
 
   return (
     <div id="rating-container">
-         <span className="me-2">Rating:</span>
+         <span className="me-2">5.0</span>
 
       {[1, 2, 3, 4, 5].map((value) => (
         <i

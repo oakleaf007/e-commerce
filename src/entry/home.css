@@ -4,13 +4,13 @@
 }
 
 #intro{
-    background-image: url("/trad2.png");
+    background-image: url("/trad3.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     padding: 20px;
-    min-height:600px;
+    min-height:400px;
     text-align: center;
     place-content: center;
 }

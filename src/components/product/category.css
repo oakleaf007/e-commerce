@@ -21,7 +21,7 @@
    margin: 5px;
    text-align: center;
     /* background-color: #333; */
-     width:150px;
+     width:120px;
 }
 .cat-card img{
     width: 100%;
@@ -30,4 +30,20 @@
       object-fit: cover;      
  
   display: block;
+}
+@media (max-width:480px) {
+  .cat-card{
+   height: 140px;
+  }
+  #cat{
+    /* background-color: #dfdfdf; */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* border-radius: 10px; */
+  }
+  #cat::-webkit-scrollbar{
+    width: 0;
+  }
+  
 }

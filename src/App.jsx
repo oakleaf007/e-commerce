@@ -11,6 +11,7 @@ import BottomHeader from './components/header/Header2';
 
 import ScrollTop from './entry/ScrollTop';
 import Signin from './entry/Signin';
+import Signup from './entry/Signup';
 const preview = false;
 
 
@@ -31,6 +32,7 @@ return(<>
       <Routes>
         <Route path="/" element={ <Home />}/>
         <Route path="/signin" element={<Signin />}/>
+        <Route path="/signup" element={<Signup />}/>
         
       </Routes>
         <About />
