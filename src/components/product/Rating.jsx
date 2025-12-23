@@ -21,7 +21,7 @@ export default function RatingStars() {
               ? "bi bi-star-fill text-warning"
               : "bi bi-star text-secondary"
           }
-          onClick={() => setRating(value)}
+          onClick={() => setRating(5)}
           style={{ cursor: "pointer", marginRight: "4px" }}
         />
       ))}

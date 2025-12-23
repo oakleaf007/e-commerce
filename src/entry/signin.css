@@ -60,12 +60,12 @@ h2{
     padding: 8px;
     border: none;
     border-radius: 4px;
-    background-color: #3E4F1E  ;
+    background-color:   #2E7D32;
     color: #fff;
     transition: all 0.3s ease;
 }
 #form-container form button:hover{
-        background-color: #2F3D16;
+        background-color: #3E4F1E;
 }
 #check{
     padding: 2px;

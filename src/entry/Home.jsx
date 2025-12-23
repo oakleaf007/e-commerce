@@ -5,6 +5,10 @@ import Category from "../components/product/Category";
 
 import ProductList from "../components/product/ProductList";
 
+
+import {Link} from "react-router-dom";
+
+
 export default function Home(){
 return(
     <div id="home-parent">
@@ -36,7 +40,7 @@ return(
     </div>
     <div className="product-cont">
         <div className="prod-card">
-            <div className="img"><img src="/category/catimg2.jpeg"></img></div>
+             <Link to="/productdetails"><div className="img"><img src="/category/catimg2.jpeg"></img></div></Link>
             <div className="desc">
                 <span className="prod-name">Chinese lehenga</span>
                 <span className="prod-price">&#x20B9; 6900</span>
@@ -101,7 +105,7 @@ return(
                 </div>    
         </div>
         <div className="prod-card">
-            <div className="img"><img src="/category/catimg2.jpeg"></img></div>
+           <div className="img" ><img src="/category/catimg2.jpeg"></img></div>
             <div className="desc">
                 <span className="prod-name">Chinese lehenga</span>
                 <span className="prod-price">&#x20B9; 6900</span>

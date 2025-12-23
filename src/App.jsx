@@ -13,6 +13,7 @@ import ScrollTop from './entry/ScrollTop';
 import Signin from './entry/Signin';
 import Signup from './entry/Signup';
 
+import ProductDetails from './components/product/ProductDetails';
 const preview = false;
 
 
@@ -34,7 +35,7 @@ return(<>
         <Route path="/" element={ <Home />}/>
         <Route path="/signin" element={<Signin />}/>
         <Route path="/signup" element={<Signup />}/>
-        
+        <Route path='/productdetails' element={<ProductDetails/>}/>
       </Routes>
         <About />
     <Footer />
