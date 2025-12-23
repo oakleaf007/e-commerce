@@ -79,7 +79,7 @@ body{
 body,
 #root{
   
-  height: 100vh;
+  height: 100vh !important;
   display: flex;
   flex-direction: column;
   /* overflow: hidden; */
@@ -93,11 +93,11 @@ main{
     flex: 1;
   display: flex;
   flex-direction: column;
-padding-top: 65px;
+/* padding-top: 65px; */
 min-width: 0;
    /* place-content: center; */
 
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 main::-webkit-scrollbar{
   width: 0;
