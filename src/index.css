@@ -93,7 +93,7 @@ main{
     flex: 1;
   display: flex;
   flex-direction: column;
-margin-top: 65px;
+padding-top: 65px;
 min-width: 0;
    /* place-content: center; */
 

@@ -1,6 +1,7 @@
 
 .product-conatiner{
-    /* margin-top: 60px; */
+   
+
     width: 100%;
     padding: 10px;
 }
@@ -119,5 +120,11 @@
         #product-details{
             flex-direction: column;
             place-items: center;
+
         }
+        .product-conatiner{
+   
+
+  
+}
 }
