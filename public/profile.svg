@@ -1,6 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path opacity="0.4" d="M12.1207 12.78C12.0507 12.77 11.9607 12.77 11.8807 12.78C10.1207 12.72 8.7207 11.28 8.7207 9.50998C8.7207 7.69998 10.1807 6.22998 12.0007 6.22998C13.8107 6.22998 15.2807 7.69998 15.2807 9.50998C15.2707 11.28 13.8807 12.72 12.1207 12.78Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path opacity="0.34" d="M18.7398 19.3801C16.9598 21.0101 14.5998 22.0001 11.9998 22.0001C9.39977 22.0001 7.03977 21.0101 5.25977 19.3801C5.35977 18.4401 5.95977 17.5201 7.02977 16.8001C9.76977 14.9801 14.2498 14.9801 16.9698 16.8001C18.0398 17.5201 18.6398 18.4401 18.7398 19.3801Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<?xml version="1.0" ?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 128 128" id="Слой_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style type="text/css">
+	.st0{fill:#FFE0B2;}
+	.st1{fill:#424242;}
+	.st2{fill:#90CAF9;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g>
+<g>
+<circle class="st0" cx="64" cy="33" r="31"/>
+<path class="st1" d="M64,66c-18.2,0-33-14.8-33-33S45.8,0,64,0s33,14.8,33,33S82.2,66,64,66z M64,4C48,4,35,17,35,33s13,29,29,29    s29-13,29-29S80,4,64,4z"/>
+</g>
+<path class="st2" d="M126,126c0-34.2-27.8-62-62-62S2,91.8,2,126H126z"/>
+<path class="st1" d="M126,128H2c-1.1,0-2-0.9-2-2c0-25.9,15.5-48.3,37.7-58.3c8-3.6,17-5.7,26.3-5.7c6.6,0,13,1,19,2.9   c26,8.1,45,32.4,45,61.1C128,127.1,127.1,128,126,128z M4,124h60h60c-0.6-19.4-10.5-36.4-25.3-46.9c-6.1-4.4-13.1-7.6-20.6-9.4   C73.5,66.6,68.8,66,64,66c-5.9,0-11.6,0.9-17,2.4c-5,1.5-9.7,3.6-14,6.2C16.2,84.8,4.7,103.1,4,124z"/>
+</g>
+<path class="st3" d="M56,127"/>
+</svg>

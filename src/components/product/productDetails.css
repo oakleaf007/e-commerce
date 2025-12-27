@@ -124,3 +124,52 @@
         }
 
 }
+
+#delivery-info{
+    display: flex;
+    gap: 20px;
+}
+
+#delivery-pin{
+  
+    width: 100px;
+    border: none;
+    outline: none;
+    /* background-color: #e0e0e0; */
+    border-bottom: 1px solid #28A745;
+ 
+}
+
+h5{
+    font-size: 18px;
+    color: #878787;
+}
+
+#delivery-pin::-webkit-inner-spin-button,
+#delivery-pin::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+#pin-check{
+    color: #28A745;
+   
+    border: none;
+    background-color: transparent;
+}
+#delivery-time{
+    font-size: 14px;
+    color: #218838;
+}
+#specs-box{
+    max-width: 600px;
+      padding: 10px;
+}
+.specs-el{
+  
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+#specs-box span{
+    display: block;
+}

@@ -2,6 +2,14 @@ import { useState , useRef} from 'react'
 
 import {Routes, Route} from "react-router-dom";
 
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+/>
+
+
+
 import Header from "./components/header/Header";
 
 import Footer from "./components/footer/Footer";

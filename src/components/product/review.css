@@ -1,0 +1,8 @@
+#rating-container{
+border: 1px solid #dfdddd;
+}
+
+#rating{
+    font-size: 24px;
+    padding: 10px;
+}
