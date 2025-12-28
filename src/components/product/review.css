@@ -1,8 +1,79 @@
 #rating-parent{
 border: 1px solid #dfdddd;
+border-radius: 2px;
+}
+
+#rating-cont{
+display: flex;
+place-items: center;
+gap: 20px;
 }
 
 #rating{
-    font-size: 24px;
+  
+    font-size: 18px;
     padding: 10px;
 }
+#rate-btn{
+    padding: 4px;
+    background-color: rgb(54, 76, 247);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+#rate-btn:hover{
+    background-color: rgb(26, 51, 239);;
+}
+.review-imgs{
+      padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.review-img{
+    border-radius: 4px;
+    /* border: 1px solid #333; */
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+}
+   
+}
+
+
+
+
+.user-review{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.user-name{
+    font-weight: bold;
+    font-size: 18px;
+    color: #878787;
+}
+.user-uploaded-img{
+
+    .user-img{
+        width: 80px;
+        height: 80px;
+
+        img{
+            width: 100%;
+        }
+    }
+   
+    
+}
+ .review-para{
+        font-size: 15px;
+    }

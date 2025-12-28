@@ -157,6 +157,16 @@ background: none;
     background-color: #fff;
 }
 
+#account-id{
+    text-align: center;
+    background-color: #121212;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
 /* ul is considering as the menu container */
   #ul-menu{
     z-index: 1;

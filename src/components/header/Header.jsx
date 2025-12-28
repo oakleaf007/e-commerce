@@ -47,7 +47,7 @@ useEffect(()=>{
             {/* these are the navbar elements with anchor tag */}
             <li className="nav-item  nav-li"><Link to="/signin" className="nav-link p-2" >signin</Link></li>
             <li className="nav-item   nav-li"><Link to ="/signup"  className="nav-link p-2 ">signup</Link></li> <div id="seperator"></div>
-            <li className="nav-item   nav-li d-flex gap-0 px-1"><span className="nav-link p-2 d-flex gap-1 span-nav" href="null"><i className="fa-solid fa-user"></i></span></li>
+            <li className="nav-item   nav-li d-flex gap-0 px-1"><span className="nav-link p-2 d-flex gap-1 span-nav" href="null"><div id="account-id"><i className="fa-solid fa-user"></i></div></span></li>
             
           </ul>
         </div>
