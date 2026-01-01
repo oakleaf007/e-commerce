@@ -17,8 +17,9 @@ import BottomHeader from './components/header/Header2';
 import ScrollTop from './entry/ScrollTop';
 import Signin from './entry/Signin';
 import Signup from './entry/Signup';
-
+import Cart  from './entry/Cart';
 import ProductDetails from './components/product/ProductDetails';
+
 const preview = false;
 
 
@@ -42,6 +43,7 @@ return(<>
         <Route path="/signin" element={<Signin />}/>
         <Route path="/signup" element={<Signup />}/>
         <Route path='/productdetails' element={<ProductDetails/>}/>
+        <Route path='/cart' element={<Cart />}/>
       </Routes>
         <About />
     <Footer />

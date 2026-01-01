@@ -12,7 +12,11 @@ export default function BottomHeader(){
 
                 </Link>
                 <button id="Home"><img src="/settinfs1.svg" width={"24px"}></img></button>
+
+                <Link to="/cart">
+               
                 <button id="Home"><img src="/cart1.svg" width={"24px"}></img></button>
+                 </Link>
                 <button id="Home"><img src="/wish1.svg" width={"24px"}></img></button>
                 <button id="Home"><img src="/account1.svg" width={"24px"}></img></button>
         
