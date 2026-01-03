@@ -20,6 +20,8 @@ import Signup from './entry/Signup';
 import Cart  from './entry/Cart';
 import ProductDetails from './components/product/ProductDetails';
 
+
+import MyAccount from './entry/MyAccount';
 const preview = false;
 
 
@@ -29,7 +31,7 @@ if(preview){
 
 
   return <main >
-    
+    <MyAccount />
     </main>
 }
 
@@ -44,6 +46,7 @@ return(<>
         <Route path="/signup" element={<Signup />}/>
         <Route path='/productdetails' element={<ProductDetails/>}/>
         <Route path='/cart' element={<Cart />}/>
+        <Route path="/account" element={<MyAccount />} />
       </Routes>
         <About />
     <Footer />
