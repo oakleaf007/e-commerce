@@ -22,6 +22,7 @@ place-content: center;
    min-width: 0;
     width: fit-content;
     max-width: 640px;
+  
     flex-wrap: wrap;
 }
 #bottom-bar button{
@@ -30,20 +31,31 @@ place-content: center;
     display: inline-block;
     padding: 20px;
     border: none;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* background: none; */
-   flex: 1;
+   /* flex: 1; */
     /* border: 1 px solid #333; */
     transition: all 0.3s ease;
     min-width: 0;
 }
-#bottom-bar button img{
-  min-width: 0;
+
+.link-btn{
+  padding: 20px;
+   background-color: #fff;
+   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   img{
+ width: 24px;
 }
-#bottom-bar button:hover{
+
+}
+
+.link-btn:hover{
     background-color: #efefef;
 }
-@media (max-width: 640px) {
+@media (max-width: 480px) {
 
     #bottom-bar{
       

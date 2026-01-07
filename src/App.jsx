@@ -17,11 +17,12 @@ import BottomHeader from './components/header/Header2';
 import ScrollTop from './entry/ScrollTop';
 import Signin from './entry/Signin';
 import Signup from './entry/Signup';
-import Cart  from './entry/Cart';
+import Cart from './components/cart/Cart';
 import ProductDetails from './components/product/ProductDetails';
 
+import MyAccount from './components/account/MyAccount';
+import Settings from './components/settings/Settings';
 
-import MyAccount from './entry/MyAccount';
 const preview = false;
 
 
@@ -31,7 +32,7 @@ if(preview){
 
 
   return <main >
-    <MyAccount />
+    <Settings />
     </main>
 }
 
@@ -44,6 +45,7 @@ return(<>
         <Route path="/" element={ <Home />}/>
         <Route path="/signin" element={<Signin />}/>
         <Route path="/signup" element={<Signup />}/>
+        <Route path="/settings" element={<Settings/>}/>
         <Route path='/productdetails' element={<ProductDetails/>}/>
         <Route path='/cart' element={<Cart />}/>
         <Route path="/account" element={<MyAccount />} />
