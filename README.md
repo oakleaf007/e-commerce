@@ -7,6 +7,12 @@ The goal of this project is to understand **component-based UI**, **state manage
 
 ## 🚀 Current Status
 ✅ Responsive Header completed  
+✅ Home page completed  
+✅ Signin, Signup pages completed  
+✅ product details page completed  
+✅ Account page added  
+✅ Cart page added  
+✅ Settings page added  
 
 🚧 More features under development
 
@@ -33,6 +39,7 @@ This is a **learning-focused project**, not a production product.
 - **HTML5**
 - **CSS3**
 - **bootstrap**
+- **scss**
 
 ---
 
