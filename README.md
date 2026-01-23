@@ -5,7 +5,7 @@ The goal of this project is to understand **component-based UI**, **state manage
 
 ---
 
-## 🚀 Current Status
+## Current Status
 ✅ Responsive Header completed  
 ✅ Home page completed  
 ✅ Signin, Signup pages completed  
@@ -18,7 +18,7 @@ The goal of this project is to understand **component-based UI**, **state manage
 
 ---
 
-## ✨ Features Implemented
+## Features Implemented
 
 ### 🔹 Responsive Header
 - Built using **React functional components**
@@ -33,7 +33,7 @@ This is a **learning-focused project**, not a production product.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **React**
 - **JavaScript (ES6+)**
 - **HTML5**

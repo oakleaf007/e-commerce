@@ -23,6 +23,8 @@ import ProductDetails from './components/product/ProductDetails';
 import MyAccount from './components/account/MyAccount';
 import Settings from './components/settings/Settings';
 
+import WishList from './components/wishlist/Wishlist';
+
 const preview = false;
 
 
@@ -48,7 +50,9 @@ return(<>
         <Route path="/settings" element={<Settings/>}/>
         <Route path='/productdetails' element={<ProductDetails/>}/>
         <Route path='/cart' element={<Cart />}/>
+        <Route path='/wish' element={<WishList />} />
         <Route path="/account" element={<MyAccount />} />
+       
       </Routes>
         <About />
     <Footer />

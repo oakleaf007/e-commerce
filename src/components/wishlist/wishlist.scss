@@ -1,0 +1,71 @@
+@use '../../theme/color.scss' as *;
+
+#wishlist-container{
+    // min-height: 300px;
+    padding: 10px;
+}
+h5{
+    color: #333;
+}
+#card-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 5px;
+}
+
+.wish-card{
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #f5f5f5;
+    max-width: 220px;
+    img{
+        width: 100%;
+    }
+    #kebab-btn{
+        position: absolute;
+        right: 1%;
+       top: 1%;
+        width: 28px;
+        height: 28px;
+        border: none;
+        border-radius: 50%;
+        font-size:15px ;
+        color: $lightGreen;
+        transition: all 0.3s ease;
+    }
+    #kebab-btn:hover{
+        background-color: #d5d2d2;
+    }
+    
+}
+.product-info{
+  
+    padding: 10px;
+   div{
+    color: $darkGreen;
+   }
+}
+
+.button-cont{
+    padding: 5px;
+    // text-align: center;
+    button{
+        width: 100%;
+        padding: 5px;
+        border-radius: 4px;
+        border: 2px solid #f3f3f3;
+        transition: all 0.3s ease;
+    }
+    button:hover{
+        background-color: $lightGreen;
+        color: $backgroundLight;
+    }
+}
+@media (max-width:630px) {
+
+    #card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
