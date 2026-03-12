@@ -85,3 +85,11 @@ h2{
     }
     
 }
+
+.success{
+    color: #218838;
+
+}
+.error{
+    color: red;
+}

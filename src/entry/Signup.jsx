@@ -11,10 +11,13 @@ export default function Signup(){
 const [form, setForm]= useState({
     name: "",
     email:"",
-    paswword: ""
+    password: ""
 });
 
-const [message, setMessage] = useState("");
+const [message, setMessage] = useState({
+    text:"",
+    type:""
+});
 
 function handleChange(e){
     setForm({
@@ -33,10 +36,11 @@ async function handleSubmit(e){
         });
 
         const data = await res.json();
-        if(res.ok){ setMessage(data.message);
+        if(res.ok){ setMessage({text: data.message, type: "success"});
+
 
         }else{
-            setMessage(data.error || data.message || "Signup failed");
+            setMessage({text: data.error || data.message || "Signup failed", type:"error"});
         }
     }catch(err){
         setMessage("server error");
@@ -63,7 +67,7 @@ async function handleSubmit(e){
                       <input type="password" placeholder="Confirm password" />
 
                     <div id="check"> <input type="checkbox" /><span>Password visibility</span></div>
-                    <div id="message">{message}</div>
+                    <div id="message" className={message.type}>{message.text}</div>
                     <button>Login</button>
                     <span>Already have an account? <Link to="/signin">Signin</Link></span>
                 </form>
