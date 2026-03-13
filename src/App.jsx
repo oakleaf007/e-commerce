@@ -24,12 +24,18 @@ import MyAccount from './components/account/MyAccount';
 import Settings from './components/settings/Settings';
 
 import WishList from './components/wishlist/Wishlist';
-
+import Landing from './entry/Landing';
+import { AuthContext } from './context/AuthContext';
+import { useContext } from 'react';
 const preview = false;
 
 
 export default function App() {
+const {isLoggedIn} = useContext(AuthContext);
 
+// const [ isLoggedIn , setIsLoggedIn] = useState(!!localStorage.getItem("token"));
+
+  // const token = localStorage.getItem("token");
 if(preview){
 
 
@@ -44,7 +50,7 @@ return(<>
     <main >
  
       <Routes>
-        <Route path="/" element={ <Home />}/>
+        <Route path="/" element={isLoggedIn ? <Home /> : <Landing />}/>
         <Route path="/signin" element={<Signin />}/>
         <Route path="/signup" element={<Signup />}/>
         <Route path="/settings" element={<Settings/>}/>

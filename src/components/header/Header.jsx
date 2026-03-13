@@ -1,18 +1,31 @@
 import "./header.css";
 
-import { useEffect, useState } from "react";
-import {Link, useLocation} from "react-router-dom";
-
+import { useContext, useEffect, useState } from "react";
+import {Link, useLocation, useNavigate} from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
 export default function Header(){
 
   // useState
+  const {isLoggedIn, logOut} = useContext(AuthContext);
+
+  const navigate = useNavigate();
 
   const [open, setOpen] = useState(false);
+
   const location = useLocation();
 
+  const [logOutBtn, setLogOutBtn] = useState(false);
 useEffect(()=>{
   setOpen(false);
 },[location.pathname]);
+
+// function logOut(){
+//   localStorage.removeItem("token");
+  
+//  navigate("/");
+// }
+
+  // const isLoggedIn= localStorage.getItem("token");
 
     return(
 
@@ -45,10 +58,25 @@ useEffect(()=>{
             </li>
 
             {/* these are the navbar elements with anchor tag */}
+            {!isLoggedIn && (
+              < >
             <li className="nav-item  nav-li"><Link to="/signin" className="nav-link p-2" >signin</Link></li>
             <li className="nav-item   nav-li"><Link to ="/signup"  className="nav-link p-2 ">signup</Link></li> <div id="seperator"></div>
-            <li className="nav-item   nav-li d-flex gap-0 px-1"><span className="nav-link p-2 d-flex gap-1 span-nav" href="null"><div id="account-id"><i className="fa-solid fa-user"></i></div></span></li>
-            
+            </>
+            )}
+            {isLoggedIn && (
+              <div style={{position: "relative"}}>
+                            <li className="nav-item   nav-li d-flex gap-0 px-1 " onClick={()=>setLogOutBtn(!logOutBtn)}><span className="nav-link p-2 d-flex gap-1 span-nav" href="null"><div id="account-id"><i className="fa-solid fa-user"></i></div></span>
+                              
+                            </li>
+                             <span id="logoutBtn" onClick={()=>{
+                              logOut();
+                              setLogOutBtn(!logOutBtn);
+                             }} className={logOutBtn? "show" : "hide" }>Logout</span>
+                   </div>        
+
+            )}
+          
           </ul>
         </div>
         {/* this is the hamburger button */}

@@ -9,14 +9,14 @@ import ProductList from "../components/product/ProductList";
 import {Link} from "react-router-dom";
 
 
-export default function Home(){
+export default function Landing(){
 return(
     <div id="home-parent">
 
  
     <div id="intro">
         <p id="welcome-para">Welcome to the Penguin wear.</p>
-        
+        <button id="shop-btn">Get started &rarr;</button>
         
     </div>
 

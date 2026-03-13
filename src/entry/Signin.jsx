@@ -1,11 +1,13 @@
 import "./signin.css";
 import { Link,useNavigate } from "react-router-dom";
 
-
-import { useState } from "react";
+import { AuthContext } from "../context/AuthContext";
+import { useContext, useState } from "react";
 
 
 export default function Signin(){
+
+    const { login} = useContext(AuthContext);
     const navigate = useNavigate();
     const [form, setForm] = useState({
         email:"",
@@ -27,7 +29,7 @@ export default function Signin(){
         e.preventDefault();
 
         try{
-            const res = await fetch("http://localhost:3000/api/signin",{
+            const res = await fetch("http://localhost:3000/api/v1/signin",{
                 method: "POST",
                 headers:{"Content-Type": "application/json"},
                 body: JSON.stringify(form)
@@ -37,8 +39,7 @@ export default function Signin(){
             const data = await res.json();
             if(res.ok){
                 setMessage({text: data.message, type: "success"});
-                localStorage.setItem("token", "true");
-                navigate("/");
+                login(data.token);
             }
             else{
                 setMessage({text: data.message, type: "error"});

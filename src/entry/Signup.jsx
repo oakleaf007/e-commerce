@@ -29,7 +29,7 @@ async function handleSubmit(e){
     e.preventDefault();
 
     try{
-        const res = await fetch("http://localhost:3000/api/signup",{
+        const res = await fetch("http://localhost:3000/api/v1/signup",{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(form)
