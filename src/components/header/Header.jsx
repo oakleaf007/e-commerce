@@ -8,7 +8,7 @@ export default function Header(){
   // useState
   const {isLoggedIn, logOut} = useContext(AuthContext);
 
-  const navigate = useNavigate();
+ 
 
   const [open, setOpen] = useState(false);
 
@@ -19,13 +19,7 @@ useEffect(()=>{
   setOpen(false);
 },[location.pathname]);
 
-// function logOut(){
-//   localStorage.removeItem("token");
-  
-//  navigate("/");
-// }
 
-  // const isLoggedIn= localStorage.getItem("token");
 
     return(
 

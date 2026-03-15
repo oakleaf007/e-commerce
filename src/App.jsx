@@ -27,6 +27,7 @@ import WishList from './components/wishlist/Wishlist';
 import Landing from './entry/Landing';
 import { AuthContext } from './context/AuthContext';
 import { useContext } from 'react';
+import NotLoggedIn from './components/account/NotLoggedIn';
 const preview = false;
 
 
@@ -57,7 +58,7 @@ return(<>
         <Route path='/productdetails' element={<ProductDetails/>}/>
         <Route path='/cart' element={<Cart />}/>
         <Route path='/wish' element={<WishList />} />
-        <Route path="/account" element={<MyAccount />} />
+        <Route path="/account" element={isLoggedIn ? <MyAccount /> : <NotLoggedIn /> } />
        
       </Routes>
         <About />

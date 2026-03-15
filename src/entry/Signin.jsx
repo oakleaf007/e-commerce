@@ -39,7 +39,10 @@ export default function Signin(){
             const data = await res.json();
             if(res.ok){
                 setMessage({text: data.message, type: "success"});
-                login(data.token);
+              
+               login(data.token);
+               
+                
             }
             else{
                 setMessage({text: data.message, type: "error"});

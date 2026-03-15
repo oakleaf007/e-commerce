@@ -1,10 +1,45 @@
 import "./myaccount.scss"
 
-import { useState } from "react"
-
+import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 export default function MyAccount(){
+
+    const {profile} = useContext(AuthContext);
+
     const [piValue, setPiValue] = useState(true);
     const [cpValue, setCpValue] = useState(false);
+
+
+    // useEffect(()=>{
+    //     const token = localStorage.getItem("token");
+    //     const storedProfile = localStorage.getItem("profile");
+        
+    //   async function fetchProfile(){
+        
+
+    //     const res = await fetch("http://localhost:3000/api/v1/profile",{
+    //         method:"GET",
+    //         headers:{ "Authorization": `Bearer ${token}`}
+    //     });
+    //     const data = await res.json();
+    //     if(res.ok){
+    //         setProfile(data);
+    //         localStorage.setItem("profile", JSON.stringify(data));
+    //         console.log(data);
+    //     }
+        
+    // }
+    //  if(storedProfile){
+    //         setProfile(JSON.parse(storedProfile));
+    //     }
+
+    // if(token && !storedProfile){
+    //     fetchProfile();
+        
+    // }
+    // },[])
+  
 
     return(
         <div id="account-container" className="container">
@@ -13,7 +48,7 @@ export default function MyAccount(){
                     <div id="customer-pic">
                         <i className="fa-regular fa-user"></i>
                     </div>
-                    Hello, <span id="customer-name" >Penguin</span>
+                    Hello, <span id="customer-name" >{profile?.name || "User"}</span>
                 </div>
                 <div id="customer-options">
                     <h4>Account settiings</h4>
@@ -43,17 +78,17 @@ export default function MyAccount(){
                 <div className={` ${piValue ? "personal-content" : "personal-hide"  }`}>
                     <h4>Personal Info:</h4>
                     < div id="input-container">
-                        <label htmlFor="" >Customer Name <i className="far fa-edit"></i></label>
-                        <input type="text" name="customer-name" placeholder="Name" disabled value="Oak Leaf"></input>
+                        <label htmlFor="customername" >Customer Name <i className="far fa-edit"></i></label>
+                        <input type="text" name="customer-name" placeholder="Name" disabled value={profile?.name || "User"} id="customername"></input>
                          <label htmlFor="" >Gender <i className="far fa-edit"></i></label>
                         <div id="gender-container">
                         <input type="radio" name="gender" value="male"></input><label htmlFor=""  >Male</label>
                         <input type="radio" name="gender" value="female" ></input><label htmlFor="" >Female</label>
                         </div>
-                         <label htmlFor="" >Customer Email</label>
-                        <input type="text" name="customer-email" placeholder="Email" disabled value="Oak Leaf"></input>
-                         <label htmlFor="" >Phone Number</label>
-                        <input type="text" name="customer-phone" placeholder="Phone" disabled value="Oak Leaf"></input>
+                         <label htmlFor="customeremail" >Customer Email</label>
+                        <input type="text" id="customeremail" name="customer-email" placeholder="Email" disabled value={profile?.email || ""}></input>
+                         <label htmlFor="customerphone" >Phone Number</label>
+                        <input type="text" id="customerphone" name="customer-phone" placeholder="Phone" disabled value=""></input>
                    </div>
                 </div>
                 
