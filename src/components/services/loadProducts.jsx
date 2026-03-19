@@ -1,11 +1,11 @@
 export const loadProducts = async(limit, offset)=>{
 
     
-    const url = `http://localhost:3000/api/v1/products?limit=${limit}&offset=${offset}`;
+    const url = import.meta.env.VITE_API_URL;
 
     try{
         
-        const res = await fetch(url);
+        const res = await fetch(`${url}/products`);
 
         
         const data = await res.json();

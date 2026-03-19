@@ -6,7 +6,7 @@ import { useContext, useState } from "react";
 
 
 export default function Signin(){
-
+    const apiUrl = import.meta.env.VITE_API_URL;
     const { login} = useContext(AuthContext);
     const navigate = useNavigate();
     const [form, setForm] = useState({
@@ -29,7 +29,8 @@ export default function Signin(){
         e.preventDefault();
 
         try{
-            const res = await fetch("http://localhost:3000/api/v1/signin",{
+
+            const res = await fetch(`${apiUrl}/signin`,{
                 method: "POST",
                 headers:{"Content-Type": "application/json"},
                 body: JSON.stringify(form)

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 
 export default function Signup(){
+     const apiUrl = import.meta.env.VITE_API_URL;
     const navigate =useNavigate();
 const [form, setForm]= useState({
     name: "",
@@ -30,7 +31,7 @@ async function handleSubmit(e){
     e.preventDefault();
 
     try{
-        const res = await fetch("http://localhost:3000/api/v1/signup",{
+        const res = await fetch(`${apiUrl}/signup`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(form)
