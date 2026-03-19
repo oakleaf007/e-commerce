@@ -7,9 +7,39 @@ import ProductList from "../components/product/ProductList";
 
 
 import {Link} from "react-router-dom";
+import { useEffect, useState } from "react";
+
+import { loadProducts } from "../components/services/loadProducts";
+
 
 
 export default function Home(){
+
+  const [prods, setprods] = useState([]);
+
+useEffect(()=>{
+
+  async function loadProds(){
+      try{
+        let limit = 10;
+        let offset = 0;
+        const res = await loadProducts(limit, offset);
+        console.log(res);
+        if(res.success){
+          setprods(res.data);
+          console.log(res.data);
+
+        }
+      }catch(err){
+        console.error("error during product loading: ",err)
+      }
+  }
+  loadProds();
+
+},[])
+
+
+
 return(
     <div id="home-parent">
 
@@ -39,11 +69,13 @@ return(
 
     </div>
     <div className="product-cont">
+
+      {prods.map((p)=>(
         <div className="prod-card">
-             <Link to="/productdetails"><div className="img"><img src="/category/catimg2.jpeg"></img></div></Link>
+             <Link to="/productdetails"><div className="img"><img src={p.image_url}></img></div></Link>
             <div className="desc">
-                <span className="prod-name">Chinese lehenga</span>
-                <span className="prod-price">&#x20B9; 6900</span>
+                <span className="prod-name">{p.name}</span>
+                <span className="prod-price">&#x20B9; {p.price}</span>
                 <RatingStars />
                       {/* <div id="shop-btns">
                         <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
@@ -52,73 +84,10 @@ return(
                       </div> */}
                 </div>    
         </div>
-        <div className="prod-card">
-            <div className="img"><img src="/category/catimg2.jpeg"></img></div>
-            <div className="desc">
-                <span className="prod-name">Chinese lehenga</span>
-                <span className="prod-price">&#x20B9; 6900</span>
-                <RatingStars />
-                      {/* <div id="shop-btns">
-                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
-                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
 
-                      </div> */}
-                </div>    
-        </div>
-        <div className="prod-card">
-            <div className="img"><img src="/category/catimg2.jpeg"></img></div>
-            <div className="desc">
-                <span className="prod-name">Chinese lehenga</span>
-                <span className="prod-price">&#x20B9; 6900</span>
-                <RatingStars />
-                      {/* <div id="shop-btns">
-                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
-                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
-
-                      </div> */}
-                </div>    
-        </div>
-        <div className="prod-card">
-            <div className="img"><img src="/category/catimg2.jpeg"></img></div>
-            <div className="desc">
-                <span className="prod-name">Chinese lehenga</span>
-                <span className="prod-price">&#x20B9; 6900</span>
-                <RatingStars />
-                      {/* <div id="shop-btns">
-                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
-                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
-
-                      </div> */}
-                </div>    
-        </div>
-        <div className="prod-card">
-            <div className="img"><img src="/category/catimg2.jpeg"></img></div>
-            <div className="desc">
-                <span className="prod-name">Chinese lehenga</span>
-                <span className="prod-price">&#x20B9; 6900</span>
-                <RatingStars />
-                      {/* <div id="shop-btns">
-                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
-                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
-
-                      </div> */}
-                </div>    
-        </div>
-        <div className="prod-card">
-           <div className="img" ><img src="/category/catimg2.jpeg"></img></div>
-            <div className="desc">
-                <span className="prod-name">Chinese lehenga</span>
-                <span className="prod-price">&#x20B9; 6900</span>
-
-                      <RatingStars />
-                      {/* <div id="shop-btns">
-                        <div id="buy-now"><img src="/buy.svg" width={"20px"}></img><span>Buy now</span></div>
-                        <div id="add-cart"><img src="/cart.svg" width={"20px"}></img></div>
-
-                      </div> */}
-                </div>    
-     
-        </div>
+      ))}
+        
+   
 
     </div>
 

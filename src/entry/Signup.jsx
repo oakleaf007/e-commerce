@@ -1,13 +1,14 @@
 import "./signin.css";
 import { useState } from "react";
 
-
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 
 
 
 export default function Signup(){
+    const navigate =useNavigate();
 const [form, setForm]= useState({
     name: "",
     email:"",
@@ -36,9 +37,9 @@ async function handleSubmit(e){
         });
 
         const data = await res.json();
-        if(res.ok){ setMessage({text: data.message, type: "success"});
-
-
+        if(res.ok){ setMessage({text: data.message+", Redirecting...", type: "success"});
+        
+        setTimeout(()=>navigate("/signin"),1000);
         }else{
             setMessage({text: data.error || data.message || "Signup failed", type:"error"});
         }
