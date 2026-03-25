@@ -116,6 +116,7 @@
   background-color: transparent;
   width: 100%;
    height: 100%;
+
     object-fit:contain;
  
   
@@ -144,7 +145,17 @@
      display: block;
     color: #2E7D32;
 }
+.wish-icon{
+    position: absolute;
+    right: 10px;
+    
+    /* border: 2px solid red; */
+}
 
+
+.wish-yes{
+    color: red;
+}
 
 @media (max-width:630px) {
    .product-cont{

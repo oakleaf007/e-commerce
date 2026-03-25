@@ -14,7 +14,7 @@ import { loadProducts } from "../components/services/loadProducts";
 
 
 export default function Home(){
-
+  
   const [prods, setprods] = useState([]);
 
 useEffect(()=>{
@@ -71,8 +71,9 @@ return(
     <div className="product-cont">
 
       {prods.map((p)=>(
-        <div className="prod-card">
-             <Link to="/productdetails"><div className="img"><img src={p.image_url}></img></div></Link>
+        <div className="prod-card" key={p.id}>
+          <div className="wish-icon"><i class="fa-regular fa-heart"></i></div>
+             <Link to="/productdetails"><div className="img"><img src={p.image_url} loading="lazy"></img></div></Link>
             <div className="desc">
                 <span className="prod-name">{p.name}</span>
                 <span className="prod-price">&#x20B9; {p.price}</span>
